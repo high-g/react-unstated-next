@@ -1,8 +1,7 @@
-import { useContext } from 'react'
-import { CounterContext } from './App'
+import { CounterContainer } from './useCounterUnstated'
 
 const CounterDisplay = () => {
-  const counter = useContext(CounterContext)
+  const counter = CounterContainer.useContainer()
   return (
     <div>
       <button onClick={counter.decrement}>-</button>
