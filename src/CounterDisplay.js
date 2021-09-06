@@ -6,7 +6,7 @@ const CounterDisplay = () => {
   return (
     <div>
       <button onClick={counter.decrement}>-</button>
-      <span>{counter}</span>
+      <span>{counter.count}</span>
       <button onClick={counter.increment}>+</button>
     </div>
   )
